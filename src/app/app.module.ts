@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
+import { EventListComponent } from './event-list/event-list.component';
+import { EventThumbnailComponent } from './event-thumbnail/event-thumbnail.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EventListComponent,
+    EventThumbnailComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,

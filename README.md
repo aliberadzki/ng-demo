@@ -1,6 +1,6 @@
-# NgDemo
+# Java events registry
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+Projekt na potrzeby krótkiej prezentacji możliwości frameworka Angular. Created using [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
 ## Development server
 

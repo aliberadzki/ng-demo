@@ -15,8 +15,8 @@
     <!--<app-rating [points]="event.points"></app-rating>-->
     <small>{{event.date | date}}</small>
   </div>
-  <div>
-  <!--<div [routerLink]="['/events/', event.id]">-->
+  <!--<div>-->
+  <div [routerLink]="['/events/', event.id]">
     <p *ngIf="showDate">
       {{event.date | date}}
     </p>

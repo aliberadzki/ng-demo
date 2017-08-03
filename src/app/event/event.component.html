@@ -1,3 +1,15 @@
-<p>
-  event works!
-</p>
+
+<div class="media">
+  <a class="media-left">
+    <p><img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-14.jpg" [alt]="event.author"></p>
+  </a>
+  <div class="media-body">
+    <h2>{{event.name}}</h2>
+    <!--<app-rating [points]="event.points"></app-rating>-->
+    <small>{{event.author}}, {{event.date | date}}</small>
+
+    <p>{{event.description}}</p>
+  </div>
+</div>
+<a [routerLink]="['/events']" class="btn btn-default">< wróć</a>
+

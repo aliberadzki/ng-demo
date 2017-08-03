@@ -1,3 +1,5 @@
-<p>
-  event-list works!
-</p>
+<h3>Najbliższe spotkania:</h3>
+
+<div class="list-group">
+  <app-event-thumbnail *ngFor="let event of events" [event]="event"></app-event-thumbnail>
+</div>

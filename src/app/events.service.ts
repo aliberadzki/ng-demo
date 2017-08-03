@@ -7,7 +7,7 @@ export class EventsService {
 
   constructor() { }
 
-  getEvents() {
+  getEvents() : Subject<Event[]> {
     let subject = new Subject();
     setTimeout(
       () => {

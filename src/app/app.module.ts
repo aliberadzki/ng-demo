@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { EventThumbnailComponent } from './event-thumbnail/event-thumbnail.component';
 import { EventComponent } from './event/event.component';
+import {EventsService} from "./events.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { EventComponent } from './event/event.component';
     BrowserModule,
     MDBBootstrapModule.forRoot()
   ],
-  providers: [],
+  providers: [EventsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

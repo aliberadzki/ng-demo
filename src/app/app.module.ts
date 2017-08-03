@@ -16,6 +16,7 @@ import { RatingComponent } from './rating/rating.component';
 import { DatePipe } from './date.pipe';
 import { LoginComponent } from './login/login.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     NotfoundComponent,
     RatingComponent,
     DatePipe,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

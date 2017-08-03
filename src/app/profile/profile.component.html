@@ -1,0 +1,22 @@
+<div>
+  <h1>Edytuj profil</h1>
+  <hr>
+  <div>
+    <form autocomplete="off" novalidate [formGroup]="profileForm" (ngSubmit)="saveProfile(profileForm.value)">
+      <div>
+        <label for="firstName">Imię:</label>
+        <input formControlName="firstName" id="firstName" name="firstName" type="text" placeholder="Twoje imię..." />
+      </div>
+      <div>
+        <label for="lastName">Nazwisko:</label>
+        <input formControlName="lastName" id="lastName" name="lastName" type="text" placeholder="Twoje nazwisko..." />
+      </div>
+      <div>
+        <label for="age">Wiek:</label>
+        <input formControlName="age" id="age" name="age" type="number" placeholder="Wiek..." />
+      </div>
+      <button type="submit" class="btn btn-success" [disabled]="!canSave()">Zapisz</button>
+      <button type="reset" class="btn btn-danger" (click)="cancel()">Anuluj</button>
+    </form>
+  </div>
+</div>

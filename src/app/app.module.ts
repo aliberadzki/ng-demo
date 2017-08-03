@@ -14,6 +14,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import {EventRouteActivatorGuard} from "./event-route-activator.guard";
 import { RatingComponent } from './rating/rating.component';
 import { DatePipe } from './date.pipe';
+import { LoginComponent } from './login/login.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,12 +25,15 @@ import { DatePipe } from './date.pipe';
     EventComponent,
     NotfoundComponent,
     RatingComponent,
-    DatePipe
+    DatePipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     EventsService,

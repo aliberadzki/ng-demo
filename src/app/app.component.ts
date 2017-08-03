@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appservices-java-team';
+  profile: any = {
+    login: "adam",
+    password: "adam",
+    firstName: "Adam",
+    lastName: "Liberadzki",
+    age: 27
+  };
+
+  isLoggedIn() :boolean {
+    return this.profile.login.length > 0;
+  }
 }

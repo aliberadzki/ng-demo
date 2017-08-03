@@ -1,5 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <button type="button" class="btn btn-info" ripple-radius *ngIf="!isLoggedIn()" [routerLink]="['/login']">
+    Zaloguj
+  </button>
+  <button type="button" class="btn btn-info" ripple-radius *ngIf="isLoggedIn()" [routerLink]="['/profile']">
+    Profil ({{profile.firstName}} {{profile.lastName}})
+  </button>
   <h1>
     Cykliczne spotkania {{title}}
   </h1>
@@ -7,7 +13,5 @@
 </div>
 
 <div class="container">
-  <!--<button type="button" class="btn btn-primary" ripple-radius>Primary</button>-->
-
   <router-outlet></router-outlet>
 </div>

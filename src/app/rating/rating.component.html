@@ -1,0 +1,8 @@
+<ul class="rating inline-ul">
+  <li *ngFor="let i of Arr(activeStars).fill(1)" [ngClass]="active">
+    <i class="fa fa-star"></i>
+  </li>
+  <li *ngFor="let i of Arr(notActiveStars).fill(1)">
+    <i class="fa fa-star"></i>
+  </li>
+</ul>

@@ -12,6 +12,7 @@ import {appRoutes} from "./routes";
 import {EventListResolverService} from "./event-list-resolver.service";
 import { NotfoundComponent } from './notfound/notfound.component';
 import {EventRouteActivatorGuard} from "./event-route-activator.guard";
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {EventRouteActivatorGuard} from "./event-route-activator.guard";
     EventListComponent,
     EventThumbnailComponent,
     EventComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

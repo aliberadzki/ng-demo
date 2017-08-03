@@ -13,6 +13,7 @@ import {EventListResolverService} from "./event-list-resolver.service";
 import { NotfoundComponent } from './notfound/notfound.component';
 import {EventRouteActivatorGuard} from "./event-route-activator.guard";
 import { RatingComponent } from './rating/rating.component';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RatingComponent } from './rating/rating.component';
     EventThumbnailComponent,
     EventComponent,
     NotfoundComponent,
-    RatingComponent
+    RatingComponent,
+    DatePipe
   ],
   imports: [
     BrowserModule,
